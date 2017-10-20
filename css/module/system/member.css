@@ -1,0 +1,11 @@
+
+/*     分配角色       */
+.m-system-member-role{}
+.m-system-member-role ul{overflow: hidden; margin-bottom: 50px;}
+.m-system-member-role ul li{float: left;margin: 10px; min-width: 110px; height: 40px;}
+.m-system-member-role ul li .layui-form-radio{display: block; margin: 0;padding: 6px 0;padding-left: 15px;padding-right: 10px; border: 1px solid #C9C9C9; background-color: #fff;border-radius: 4px;}
+.m-system-member-role ul li .layui-form-radioed{ border: 1px solid #009688; background-color: #009688;}
+.m-system-member-role ul li .layui-form-radioed i,
+.m-system-member-role ul li .layui-form-radioed span{color: #fff;}
+.m-system-member-role ul li span{color: #000;}
+/*     /分配角色       */

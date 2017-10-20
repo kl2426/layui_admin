@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>物流公司管理列表</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../../fonts/alicdnfont/font_tnyc012u2rlwstt9.css" media="all" />
+		<link rel="stylesheet" href="../../../css/common/main.css" media="all" />
+		<link rel="stylesheet" href="../../../css/module/enterprise/enterprise.css" media="all" />
+	</head>
+
+	<body class="childrenBody m-in-body">
+		<blockquote class="layui-elem-quote news_search p-b-none">
+			<form class="layui-form layui-row" action="">
+				<div class="layui-col-xs10">
+					<div class="layui-col-xs3">
+						<div class="layui-form-item">
+							<label class="layui-form-label">企业名称</label>
+							<div class="layui-input-block">
+								<input type="text" name="title" placeholder="请输入企业名称" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs3">
+						<div class="layui-form-item">
+							<label class="layui-form-label">属所行业</label>
+							<div class="layui-input-block">
+								<select name="city1">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs3">
+						<div class="layui-form-item">
+							<label class="layui-form-label">工商注册号</label>
+							<div class="layui-input-block">
+								<input type="text" name="title1" placeholder="请输入企业名称" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs3">
+						<div class="layui-form-item">
+							<label class="layui-form-label">审核状态</label>
+							<div class="layui-input-block">
+								<select name="city">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs2 text-rigth">
+					<a class="layui-btn" lay-submit lay-filter="listSearch">查询</a>
+					<a class="layui-btn layui-btn-normal listAdd_btn">添加</a>
+				</div>
+			</form>
+		</blockquote>
+		
+		
+		<div class="layui-form links_list">
+			<table class="layui-table" lay-data="{ url:'../../../json/demo.json', page:true, id:'idTest'}" lay-filter="demo">
+				<thead>
+					<tr>
+						<th lay-data="{field:'id', width:100}">企业名称</th>
+						<th lay-data="{field:'username', width:100}">所属行业</th>
+						<th lay-data="{field:'sex', width:100, sort: true}">注册类型</th>
+						<th lay-data="{field:'city', width:100}">工商注册号</th>
+						<th lay-data="{field:'sign', width:177}">企业地址</th>
+						<th lay-data="{field:'experience', width:100, sort: true}">法人</th>
+						<th lay-data="{field:'score', width:100, sort: true}">联系方式</th>
+						<th lay-data="{field:'classify', width:100}">审核状态</th>
+						<th lay-data="{fixed: 'right', width:190, align:'center', toolbar: '#barOperate'}">操作</th>
+					</tr>
+				</thead>
+			</table>
+
+			<script type="text/html" id="barOperate">
+				<a class="layui-btn layui-btn-primary layui-btn-mini" lay-event="detail">查看</a>
+				<a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+				<a class="layui-btn layui-btn-normal layui-btn-mini" lay-event="check">审核</a>
+				<a class="layui-btn layui-btn-danger layui-btn-mini" lay-event="del">删除</a>
+			</script>
+
+		</div>
+		
+		
+		<script type="text/javascript" src="../../../layui/layui.all.js"></script>
+		<script type="text/javascript" src="logisticsList.js"></script>
+
+	</body>
+
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>添加电商企业</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../../css/common/main.css" media="all" />
+		<link rel="stylesheet" href="../../../css/module/enterprise/enterprise.css" media="all" />
+	</head>
+
+	<body class="childrenBody m-in-body">
+		<form class="layui-form layui-row" action="">
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业名称</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="title" placeholder="请输入企业名称" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">属所行业</label>
+					<div class="layui-input-block">
+						<select name="city" lay-verify="required">
+							<option value=""></option>
+							<option value="0">北京</option>
+							<option value="1">上海</option>
+							<option value="2">广州</option>
+							<option value="3">深圳</option>
+							<option value="4">杭州</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业执照号</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" placeholder="请输入企业执照号" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">注册类型</label>
+					<div class="layui-input-block">
+						<select name="city" lay-verify="required">
+							<option value=""></option>
+							<option value="0">北京</option>
+							<option value="1">上海</option>
+							<option value="2">广州</option>
+							<option value="3">深圳</option>
+							<option value="4">杭州</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">法人</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="person" placeholder="请输入法人名称" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">联系方式</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" placeholder="请输入联系方式" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">身份证号码</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" lay-verify="identity" placeholder="请输入身份证号码" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业规模</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" placeholder="请输入企业规模" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业地址</label>
+					<div class="layui-input-block">
+
+						<div class="layui-col-xs4">
+							<div class="layui-form-item m-layui-form-item-1">
+								<label class="layui-form-label">省</label>
+								<div class="layui-input-block">
+									<select name="city" lay-verify="required">
+										<option value=""></option>
+										<option value="0">北京</option>
+										<option value="1">上海</option>
+										<option value="2">广州</option>
+										<option value="3">深圳</option>
+										<option value="4">杭州</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="layui-col-xs4">
+							<div class="layui-form-item m-layui-form-item-1">
+								<label class="layui-form-label">市</label>
+								<div class="layui-input-block">
+									<select name="city" lay-verify="required">
+										<option value=""></option>
+										<option value="0">北京</option>
+										<option value="1">上海</option>
+										<option value="2">广州</option>
+										<option value="3">深圳</option>
+										<option value="4">杭州</option>
+									</select>
+								</div>
+							</div>
+						</div>
+						<div class="layui-col-xs4">
+							<div class="layui-form-item m-layui-form-item-1">
+								<label class="layui-form-label">区</label>
+								<div class="layui-input-block">
+									<select name="city" lay-verify="required">
+										<option value=""></option>
+										<option value="0">北京</option>
+										<option value="1">上海</option>
+										<option value="2">广州</option>
+										<option value="3">深圳</option>
+										<option value="4">杭州</option>
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">详细地址</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" lay-verify="required" placeholder="请输入标题" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业邮箱</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" lay-verify="email" placeholder="请输入企业邮箱" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">统一信用代码</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" placeholder="请输入统一信用代码" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">企业LOGO</label>
+					<div class="layui-input-block">
+						<div class="layui-upload">
+							<div class="layui-col-xs4">
+								<button type="button" class="layui-btn" id="upfile_logo1">上传图片</button>
+							</div>
+							<div class="layui-col-xs8">
+								<div class="layui-upload-list">
+									<img class="layui-upload-img" id="upfile_bc_img1">
+									<p id="upfile_bc_txt1"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div class="layui-col-xs6">
+				<div class="layui-form-item">
+					<label class="layui-form-label">营业执照</label>
+					<div class="layui-input-block">
+						<div class="layui-upload">
+							<div class="layui-col-xs4">
+								<button type="button" class="layui-btn" id="upfile_logo2">上传图片</button>
+							</div>
+							<div class="layui-col-xs8">
+								<div class="layui-upload-list">
+									<img class="layui-upload-img" id="upfile_bc_img2">
+									<p id="upfile_bc_txt2"></p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="layui-col-xs12">
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">主营项目</label>
+					<div class="layui-input-block">
+						<textarea name="desc" placeholder="请输入内容" class="layui-textarea"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+					<button type="reset" class="layui-btn layui-btn-primary">重置</button>
+				</div>
+			</div>
+		</form>
+		
+		
+		<script type="text/javascript" src="../../../layui/layui.js"></script>
+		<script type="text/javascript" src="businessAdd.js"></script>
+	</body>
+
+</html>

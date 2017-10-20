@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>菜单管理列表</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../../fonts/alicdnfont/font_tnyc012u2rlwstt9.css" media="all" />
+		<link rel="stylesheet" href="../../../css/common/main.css" media="all" />
+		<link rel="stylesheet" href="../../../css/module/system/menu.css" media="all" />
+		<link rel="stylesheet" href="../../../css/common/modal.css" media="all" />
+	</head>
+
+	<body class="childrenBody m-in-body">
+		<blockquote class="layui-elem-quote news_search p-b-none">
+			<form class="layui-form layui-row" action="">
+				<div class="layui-col-xs11">
+					<div class="layui-col-xs4">
+						<div class="layui-form-item">
+						</div>
+					</div>
+					<div class="layui-col-xs4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">上级菜单</label>
+							<div class="layui-input-block">
+								<select name="city1">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+					</div>
+					<div class="layui-col-xs4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">菜单名称</label>
+							<div class="layui-input-block">
+								<select name="city1">
+									<option value=""></option>
+									<option value="0">北京</option>
+									<option value="1">上海</option>
+									<option value="2">广州</option>
+									<option value="3">深圳</option>
+									<option value="4">杭州</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs1 text-rigth">
+					<a class="layui-btn" lay-submit lay-filter="listSearch">查询</a>
+				</div>
+			</form>
+		</blockquote>
+
+		<div class="layui-form links_list m-operate-space">
+			<table class="layui-table" lay-data="{ url:'../../../json/demo.json', page:true, id:'demo'}" lay-filter="demo">
+				<thead>
+					<tr>
+						<th lay-data="{field:'id', width:100}">菜单名称</th>
+						<th lay-data="{field:'username', width:100}">菜单编码</th>
+						<th lay-data="{field:'sex', width:100}">上级菜单</th>
+						<th lay-data="{field:'city', width:100}">菜单图标</th>
+						<th lay-data="{field:'city', width:100}">菜单地址</th>
+						<th lay-data="{field:'city', width:100}">是否可见</th>
+						<th lay-data="{field:'city', width:100}">是否启用</th>
+						<th lay-data="{field:'city', width:100}">排序</th>
+						<th lay-data="{fixed: 'right', width:160, align:'center', toolbar: '#barOperate'}">操作</th>
+					</tr>
+				</thead>
+			</table>
+
+			<script type="text/html" id="barOperate">
+				<a class="layui-btn layui-btn-primary layui-btn-mini listAdd_btn" lay-event="detail">查看</a>
+				<a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+				<a class="layui-btn layui-btn-mini layui-btn-danger" lay-event="del">删除</a>
+			</script>
+
+		</div>
+
+		<!--   查看 修改 模板    -->
+		<script id="modal_view" type="text/html">
+			<div class="m-modal-menu">
+				<form class="layui-form" action="">
+					<div class="layui-form-item">
+						<label class="layui-form-label">菜单名称</label>
+						<div class="layui-input-block">
+							<input type="text" name="name" value="{{ d.city }}" {{#  if(d.lay_operate == 'detail'){ }} disabled {{#  } }} placeholder="请输入菜单名称" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">菜单编码</label>
+						<div class="layui-input-block">
+							<input type="text" name="code" value="{{ d.city }}" {{#  if(d.lay_operate == 'detail'){ }} disabled {{#  } }} placeholder="请输入菜单编码" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">上级菜单</label>
+						<div class="layui-input-block">
+							<input type="text" name="url" value="{{ d.city }}" {{#  if(d.lay_operate == 'detail'){ }} disabled {{#  } }} placeholder="请输入上级菜单" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">菜单图标</label>
+						<div class="layui-input-block">
+							{{#  if(d.lay_operate == 'detail'){ }}
+							<!-- 查看 -->
+							<a href="https://static.bootcss.com/expo/img/6/56/aecc20901cc436b5cd10911302e0b.png" style="max-width: 50px; max-height: 40px;" class="m-img-xs" target="_blank"><img src="https://static.bootcss.com/expo/img/6/56/aecc20901cc436b5cd10911302e0b.png" /></a>
+							{{#  }else{ }}
+							<!-- 修改  有图片   -->
+							<div class="layui-upload">
+								<div class="layui-col-xs4">
+									<button type="button" class="layui-btn" id="upfile_logo1">上传图片</button>
+								</div>
+								<div class="layui-col-xs8">
+									<div class="layui-upload-list">
+										<img class="layui-upload-img" id="upfile_bc_img1">
+										<p id="upfile_bc_txt1"></p>
+									</div>
+								</div>
+							</div>
+							{{#  } }}
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">菜单地址</label>
+						<div class="layui-input-block">
+							<input type="text" name="url" value="{{ d.city }}" {{#  if(d.lay_operate == 'detail'){ }} disabled {{#  } }} placeholder="请输入菜单地址" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">是否可见</label>
+						<div class="layui-input-block">
+							<input type="radio" name="sex" value="可见" title="可见" checked="">
+					    	<input type="radio" name="sex" value="不可见" title="不可见">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">是否启用</label>
+						<div class="layui-input-block">
+							<input type="radio" name="sex1" value="启用" title="启用" checked="">
+					    	<input type="radio" name="sex1" value="不启用" title="不启用">
+						</div>
+					</div>
+					<div class="layui-form-item">
+						<label class="layui-form-label">排序</label>
+						<div class="layui-input-block">
+							<input type="text" name="url" value="{{ d.city }}" {{#  if(d.lay_operate == 'detail'){ }} disabled {{#  } }} placeholder="请输入排序" autocomplete="off" class="layui-input">
+						</div>
+					</div>
+				</form>
+			</div>
+			
+		</script>
+		<!--   查看 修改 临时 dom    -->
+		<div id="modal_menu"></div>
+
+		<script type="text/javascript" src="../../../layui/layui.all.js"></script>
+		<script type="text/javascript" src="menuList.js"></script>
+
+	</body>
+
+</html>

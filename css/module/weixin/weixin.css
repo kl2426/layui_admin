@@ -1,0 +1,66 @@
+/*   微信定制     */
+.m-weixin-weixin{display: flex;}
+.m-weixin-weixin .weixin-left{flex: 0 0 320px;}
+.m-weixin-weixin .weixin-left .weixin-mobile{width: 320px;border: solid 1px #e7e7eb;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-header{text-align: center; height: 64px;background: url(../../../img/module/weixin/weixin-header.png) no-repeat;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-header span{display: inline-block;vertical-align: top;margin-top: 34px;font-size: 14px; color: #fff;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-body{height: 460px;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav{padding-left: 44px; border-top: solid 1px #e7e7eb; height: 50px; background: url(../../../img/module/weixin/weixin-nav.png)) no-repeat;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul{}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li{float: left; margin-left: -1px;margin-top: -1px; position: relative; border: solid 1px #e7e7eb; height: 50px;width: 100%;cursor: pointer;width: 32.9%; }
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul li{background-color: #FAFAFA;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul li.active,
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul li:hover{position: relative;z-index: 1; border-color: #44B549;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > a{display: block;margin-top: 15px; text-align: center;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > a i{vertical-align: top;margin:2px 3px 0 0;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > a span{display:block;padding: 0 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul{position: absolute;bottom: 60px;left: 0;width: 100%; text-align: center;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul:before{position: absolute;z-index: 2; left: 50%;bottom: -6px; margin-left: -5px; content: ' '; width: 10px; height: 6px;background: url(../../../img/module/weixin/weixin-jiao.png) no-repeat;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul > li{ border: solid 1px #e7e7eb; height: 50px;line-height: 50px;margin-bottom: -1px;}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul > li > a{}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul > li > a i{}
+.m-weixin-weixin .weixin-left .weixin-mobile .mobile-nav > ul > li > ul > li > a span{display: block;padding: 0 10px;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+.weixin-icon-add{display: inline-block;vertical-align: middle;width: 14px; height: 14px;background: url(../../../img/module/weixin/weixin-icon.png) no-repeat;}
+.m-weixin-weixin .weixin-body{flex: 1;padding-left: 20px;}
+.m-weixin-weixin .weixin-body .weixin-main{min-height: 577px; border: solid 1px #e7e7eb;background-color: #fafafa;padding: 0 20px;padding-left: 0;}
+.m-weixin-weixin .weixin-body .weixin-main .tip{color: #999;margin-top: 5px;}
+.m-weixin-weixin .weixin-body .weixin-main .tip{color: #999;margin-top: 5px;}
+.m-weixin-weixin .weixin-body .weixin-main .main-header{height: 40px; line-height: 40px;border-bottom: solid 1px #e7e7eb;margin-left: 20px; margin-bottom: 20px;}
+.m-weixin-weixin .weixin-body .weixin-main .main-header .del-right{float: right; color: #6B9AEB; cursor: pointer;}
+.m-weixin-weixin .weixin-body .weixin-main .menu-body{}
+.m-weixin-weixin .weixin-body .weixin-main .menu-body .one{display: none;}
+.m-weixin-weixin .weixin-body .weixin-main .menu-body .one:first-child{display: block;}
+
+
+/*   /微信定制     */
+
+
+/*  图文信息     */
+.m-weixin-info{border:solid 1px #ccc;border-radius: 4px;}
+.m-weixin-info .info-time{margin: 10px;}
+.m-weixin-info .info-img{margin: 10px;position: relative;}
+.m-weixin-info .info-img img{display: block;width: 100%; height: 290px;background-color: #F0F0F0;}
+.m-weixin-info .info-img span{position: absolute;display: block; bottom: 0;left: 0;width: 100%; line-height: 30px;background-color:rgba(0,0,0,0.3); color: #fff;}
+.m-weixin-info .info-img span font{display: block;margin:0 10px;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;}
+.m-weixin-info .info-minimg{padding: 10px;border-top: solid 1px #ccc;}
+.m-weixin-info .info-minimg ul{ overflow: hidden;}
+.m-weixin-info .info-minimg ul li{float: left;}
+.m-weixin-info .info-minimg ul li img{width: 60px; height: 60px;}
+
+.m-pic-upimg{display: block;width: 275px;}
+.m-pic-upimg img{display: block;background-color: #F0F0F0; width: 275px;height: 275px;}
+.m-weixin-info-modal .layui-form-text{}
+.m-weixin-info-modal .layui-form-text .layui-input-block,
+.m-weixin-info-modal .layui-form-text input,
+.m-weixin-info-modal .layui-form-text .layui-form-label{min-height: auto; padding-top: 0;padding-bottom: 0;height: 20px; line-height: 20px;}
+
+.m-pic-table-img{display: block;width: 70px; height: 70px;}
+.m-pic-table-img img{max-width: 100%; max-height: 100%;}
+.m-weixin-pic-talbe tbody .layui-table-cell{height: auto;}
+
+.layui-form-item .layui-table .layui-form-checkbox[lay-skin=primary]{margin-top: 0;}
+
+.m-weixin-command-add-img{}
+.m-weixin-command-add-img li{float: left;border: solid 1px #F0F0F0;margin-right: 5px;}
+.m-weixin-command-add-img li img{display: block; width: 80px; height: 80px;}
+.m-weixin-command-add-img li p{text-align: center;padding: 0 10px;white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}

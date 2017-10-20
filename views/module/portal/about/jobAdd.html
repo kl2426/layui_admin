@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>添加招聘</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../../../css/common/main.css" media="all" />
+		<link rel="stylesheet" href="../../../../css/module/portal/job.css" media="all" />
+	</head>
+
+	<body class="childrenBody m-in-body">
+		<form class="layui-form layui-row" action="">
+			<div class="layui-col-xs12">
+				<div class="layui-form-item">
+					<label class="layui-form-label">招聘职位</label>
+					<div class="layui-input-block">
+						<input type="text" name="title" required lay-verify="required" maxlength="40" placeholder="请输入招聘职位议不超过20个字符" autocomplete="off" class="layui-input">
+					</div>
+				</div>
+			</div>
+			
+			<div class="layui-col-xs12">
+						<div class="layui-form-item">
+							<label class="layui-form-label">工作地点</label>
+							<div class="layui-input-block">
+								<select name="city1" required lay-verify="required">
+									<option value="0">长沙</option>
+									<option value="1">广州</option>
+									<option value="1">深圳</option>
+									<option value="1">上海</option>
+								</select>
+							</div>
+						</div>
+					</div>
+			
+			<div class="layui-col-xs12">
+				<div class="layui-form-item layui-form-text">
+					<label class="layui-form-label">招聘条件</label>
+					<div class="layui-input-block">
+						<textarea class="layui-textarea layui-hide" name="content" lay-verify="content" id="LAY_demo_editor"></textarea>
+					</div>
+				</div>
+			</div>
+
+			<div class="layui-col-xs12">
+				<div class="layui-form-item">
+				</div>
+			</div>
+
+			<div class="layui-form-item">
+				<div class="layui-input-block">
+					<button class="layui-btn layui-btn-normal" lay-submit lay-filter="formDemo">立即提交</button>
+				</div>
+			</div>
+		</form>
+
+		<script type="text/javascript" src="../../../../layui/layui.js"></script>
+		<script type="text/javascript" src="jobAdd.js"></script>
+	</body>
+
+</html>

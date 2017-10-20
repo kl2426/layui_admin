@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>注册企业详情</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="format-detection" content="telephone=no">
+		<link rel="stylesheet" href="../../../layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../../../css/common/main.css" media="all" />
+		<link rel="stylesheet" href="../../../css/module/system/user.css" media="all" />
+	</head>
+
+	<body class="childrenBody m-in-body">
+		
+		<blockquote class="layui-elem-quote news_search p-b-none">
+			<form class="layui-form layui-row" action="">
+				<div class="layui-col-xs11">
+					<div class="layui-col-xs8">
+						<div class="layui-form-item">
+						</div>
+					</div>
+					<div class="layui-col-xs4">
+						<div class="layui-form-item">
+							<label class="layui-form-label">员工账号</label>
+							<div class="layui-input-block">
+								<input type="text" name="title1" placeholder="请输入员工账号" autocomplete="off" class="layui-input">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="layui-col-xs1 text-rigth">
+					<a class="layui-btn" lay-submit lay-filter="listSearch">查询</a>
+				</div>
+			</form>
+		</blockquote>
+		
+		
+		<div class="layui-form links_list m-operate-space">
+			<table class="layui-table" lay-data="{ url:'../../../json/demo.json', page:true, id:'idTest'}" lay-filter="demo">
+				<thead>
+					<tr>
+						<th lay-data="{field:'id', width:100}">员工姓名</th>
+						<th lay-data="{field:'username', width:100}">联系电话</th>
+						<th lay-data="{field:'sex', width:110}">身份证号</th>
+						<th lay-data="{field:'experience', width:100}">员工账号</th>
+						<th lay-data="{field:'experience', width:100}">员工角色</th>
+						<th lay-data="{field:'experience', width:100}">入驻时间</th>
+						<th lay-data="{field:'experience', width:100,templet: '#table_certification'}">状态</th>
+						<th lay-data="{fixed: 'right', width:120, toolbar: '#barOperate'}">操作</th>
+					</tr>
+				</thead>
+			</table>
+			
+			
+			<!--  状态   -->
+			<script type="text/html" id="table_certification">
+				{{#  if(d.experience == '255'){ }}
+			    <span class="layui-btn layui-btn-mini">已注销</span>
+				{{#  } else if(d.experience =='884') { }}
+			    <span class="layui-btn layui-btn-normal layui-btn-mini">正常</span>
+			    {{#  } else { }}
+			    <span class="layui-btn layui-btn-primary layui-btn-mini">{{ d.experience }}</span>
+				{{#  } }}
+			</script>
+
+			<script type="text/html" id="barOperate">
+				<a class="layui-btn layui-btn-primary layui-btn-mini listAdd_btn" lay-event="logout">注销</a>
+				<a class="layui-btn layui-btn-mini" lay-event="edit">编辑</a>
+			</script>
+
+		</div>
+		
+		
+		<script type="text/javascript" src="../../../layui/layui.js"></script>
+		<script type="text/javascript" src="companyInfo.js"></script>
+	</body>
+
+</html>

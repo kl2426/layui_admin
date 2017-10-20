@@ -1,0 +1,196 @@
+[
+	{
+		"title": "首页",
+		"icon": "icon-computer",
+		"href": "views/module/main.html",
+		"spread": false
+	}, {
+		"title": "企业管理",
+		"icon": "&#xe630;",
+		"href": "",
+		"spread": false,
+		"children": [
+			{
+				"title": "电商企业管理",
+				"icon": "&#xe61c;",
+				"href": "views/module/enterprise/businessList.html",
+				"spread": false
+			}, {
+				"title": "仓储公司管理",
+				"icon": "&#xe609;",
+				"href": "views/module/enterprise/warehouseList.html",
+				"spread": false
+			}, {
+				"title": "物流公司管理",
+				"icon": "&#xe609;",
+				"href": "views/module/enterprise/logisticsList.html",
+				"spread": false
+			}
+		]
+	}, {
+		"title": "日志管理",
+		"icon": "&#xe630;",
+		"href": "",
+		"spread": false,
+		"children": [
+			{
+				"title": "登录日志",
+				"icon": "&#xe61c;",
+				"href": "views/module/log/loginList.html",
+				"spread": false
+			}, {
+				"title": "操作日志",
+				"icon": "&#xe609;",
+				"href": "views/module/log/operationList.html",
+				"spread": false
+			}
+		]
+	}, {
+		"title": "系统配置",
+		"icon": "&#xe630;",
+		"href": "",
+		"spread": false,
+		"children": [
+			{
+				"title": "员工管理",
+				"icon": "&#xe61c;",
+				"href": "views/module/system/memberList.html",
+				"spread": false
+			}, {
+				"title": "注册用户",
+				"icon": "&#xe609;",
+				"href": "views/module/system/userList.html",
+				"spread": false
+			}, {
+				"title": "注册企业",
+				"icon": "&#xe609;",
+				"href": "views/module/system/companyList.html",
+				"spread": false
+			}, {
+				"title": "部门管理",
+				"icon": "&#xe609;",
+				"href": "views/module/system/departmentList.html",
+				"spread": false
+			}, {
+				"title": "菜单管理",
+				"icon": "&#xe609;",
+				"href": "views/module/system/menuList.html",
+				"spread": false
+			}, {
+				"title": "角色管理",
+				"icon": "&#xe609;",
+				"href": "views/module/system/roleList.html",
+				"spread": false
+			}, {
+				"title": "基础字典",
+				"icon": "&#xe609;",
+				"href": "",
+				"spread": false,
+				"children":[
+					{
+						"title": "产品",
+						"icon": "&#xe61c;",
+						"href": "views/module/system/dictionary/dictionaryList.html",
+						"spread": false
+					}, {
+						"title": "地域",
+						"icon": "&#xe609;",
+						"href": "views/module/system/dictionary/regionList.html",
+						"spread": false
+					}, {
+						"title": "企业行业",
+						"icon": "&#xe609;",
+						"href": "views/module/system/dictionary/industryList.html",
+						"spread": false
+					}
+				]
+			}
+		]
+	}, {
+		"title": "门户管理",
+		"icon": "&#xe630;",
+		"href": "",
+		"spread": false,
+		"children": [
+			{
+				"title": "信息管理",
+				"icon": "&#xe61c;",
+				"href": "",
+				"spread": false,
+				"children":[
+					{
+						"title": "招商管理",
+						"icon": "&#xe61c;",
+						"href": "views/module/portal/merchantsList.html",
+						"spread": false
+					}, {
+						"title": "政策导读",
+						"icon": "&#xe609;",
+						"href": "views/module/system/dictionary/regionList.html",
+						"spread": false
+					}
+				]
+			},
+			{
+				"title": "新闻资讯",
+				"icon": "&#xe61c;",
+				"href": "",
+				"spread": false,
+				"children":[
+					{
+						"title": "新闻",
+						"icon": "&#xe609;",
+						"href": "views/module/portal/info/newsList.html",
+						"spread": false
+					},{
+						"title": "时事新闻",
+						"icon": "&#xe609;",
+						"href": "views/module/portal/info/newsList.html",
+						"spread": false
+					},{
+						"title": "视频资讯",
+						"icon": "&#xe609;",
+						"href": "views/module/portal/info/newsList.html",
+						"spread": false
+					},{
+						"title": "图片资讯",
+						"icon": "&#xe609;",
+						"href": "views/module/portal/info/newsList.html",
+						"spread": false
+					}
+				]
+			}, {
+				"title": "信用管理",
+				"icon": "&#xe609;",
+				"href": "views/module/login/login.html",
+				"spread": false,
+				"target": "_blank"
+			}, {
+				"title": "短信管理",
+				"icon": "&#xe609;",
+				"href": "views/module/login/login.html",
+				"spread": false,
+				"target": "_blank"
+			}, {
+				"title": "接口管理",
+				"icon": "&#xe609;",
+				"href": "views/module/login/login.html",
+				"spread": false,
+				"target": "_blank"
+			},{
+				"title": "关于我们",
+				"icon": "&#xe61c;",
+				"href": "",
+				"spread": false,
+				"children":[
+					{
+						"title": "招聘",
+						"icon": "&#xe609;",
+						"href": "views/module/portal/about/jobList.html",
+						"spread": false
+					}
+				]
+			}
+		]
+	}
+]

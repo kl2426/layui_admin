@@ -1,0 +1,39 @@
+[
+	{
+		"title": "首页",
+		"icon": "icon-computer",
+		"href": "views/module/main.html",
+		"spread": false
+	}, 
+	{
+		"title": "公众号管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/mpList.html",
+		"spread": false
+	}, {
+		"title": "URL管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/urlList.html",
+		"spread": false
+	}, {
+		"title": "信息图文管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/infoList.html",
+		"spread": false
+	}, {
+		"title": "信息图片管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/picList.html",
+		"spread": false
+	}, {
+		"title": "微信菜单管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/menuList.html",
+		"spread": false
+	}, {
+		"title": "微信指令管理",
+		"icon": "&#xe609;",
+		"href": "views/module/weixin/commandList.html",
+		"spread": false
+	}
+]
